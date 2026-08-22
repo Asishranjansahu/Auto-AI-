@@ -2,27 +2,27 @@
 
 # 🚀 AutoApply
 
-### **Autonomous AI Job Application & Career Intelligence Suite for Android**
+### **Autonomous AI Career Intelligence & Software Engineering Job Automation Suite**
 
-*Effortlessly orchestrate job discovery, ATS resume matching, autonomous application submission, and recruiter outreach across 6+ top employment platforms.*
+*An enterprise-grade, offline-first Android application orchestrating autonomous job matching, ATS resume optimization, rate-paced multi-platform submissions, and intelligent recruiter outreach.*
 
 <br/>
 
-**Created & Maintained by [ASISH RANJAN SAHU](mailto:asishranjansahu2003@gmail.com)**
+**Lead Architect & Author: [ASISH RANJAN SAHU](mailto:asishranjansahu2003@gmail.com)**
 
 <br/>
 
 [![Author: ASISH RANJAN SAHU](https://img.shields.io/badge/Author-ASISH%20RANJAN%20SAHU-blue.svg?style=for-the-badge&logo=github)](mailto:asishranjansahu2003@gmail.com)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.0.0-7F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org)
-[![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-M3-4285F4.svg?style=for-the-badge&logo=jetpackcompose&logoColor=white)](https://developer.android.com/jetpack/compose)
-[![Android SDK](https://img.shields.io/badge/Android-API%2026%2B-3DDC84.svg?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com)
+[![Jetpack Compose](https://img.shields.io/badge/UI-Jetpack%20Compose%20M3-4285F4.svg?style=for-the-badge&logo=jetpackcompose&logoColor=white)](https://developer.android.com/jetpack/compose)
+[![Android SDK](https://img.shields.io/badge/Platform-Android%20API%2026%2B-3DDC84.svg?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com)
 [![Google Gemini](https://img.shields.io/badge/AI-Gemini%202.5%20Flash-8E75FF.svg?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev)
 [![Room Database](https://img.shields.io/badge/Storage-Room%20SQLite-F9AB00.svg?style=for-the-badge&logo=sqlite&logoColor=white)](https://developer.android.com/training/data-storage/room)
 [![License: MIT](https://img.shields.io/badge/License-MIT-00C853.svg?style=for-the-badge)](LICENSE)
 
 <br/>
 
-[Key Features](#-key-features) • [Architecture](#-architecture--tech-stack) • [Installation](#-getting-started) • [Security & Privacy](#-security--privacy) • [Author](#-author--lead-developer) • [Roadmap](#-roadmap)
+[Overview](#-overview) • [Software Engineering Tracks](#-software-engineering-career-tracks) • [Core Capabilities](#-core-capabilities) • [System Architecture](#-system-architecture) • [Getting Started](#-getting-started) • [Author](#-author--lead-architect) • [License](#-license)
 
 ---
 
@@ -30,82 +30,85 @@
 
 ## 📖 Overview
 
-**AutoApply** is an intelligent, offline-first native Android application designed to eliminate job search fatigue. Powered by **Google Gemini AI** and built entirely in **Jetpack Compose (Material 3)**, AutoApply acts as your personal autonomous agent. It crawls, ranks, tailors, autofills, and tracks applications across major platforms including **LinkedIn, Indeed, Glassdoor, Wellfound, Monster, and ZipRecruiter**.
+**AutoApply** is an autonomous mobile software suite engineered to eliminate job search fatigue and streamline career advancement for modern software professionals. 
+
+Built with **Kotlin 2.0**, **Jetpack Compose (Material Design 3)**, and **Google Gemini 2.5 Flash**, AutoApply runs a deterministic background application agent. It autonomously parses resumes, calculates multi-vector ATS relevance scores, synchronizes credentials across 6+ top employment portals, autofills complex job application questionnaires with human-like rate pacing, and logs full lifecycle statuses directly to an offline-first SQLite database.
 
 ```
-[ Resume OCR & Profile ] ────► [ Gemini AI ATS Matcher ] ────► [ Autonomous Bot Dispatch ]
-                                                                       │
-[ Real-Time Tracking ] ◄─── [ Room Database Cache ] ◄──────────────────┘
+┌─────────────────────────┐      ┌─────────────────────────┐      ┌─────────────────────────┐
+│   Resume & Skills OCR   │ ───► │  Gemini 2.5 ATS Engine  │ ───► │  Autonomous Dispatcher  │
+│ (Custom Domain Presets) │      │ (Keyword Matrix & Match)│      │  (Rate-Paced Bot Queue) │
+└─────────────────────────┘      └─────────────────────────┘      └────────────┬────────────┘
+                                                                               │
+┌─────────────────────────┐      ┌─────────────────────────┐                   │
+│ Real-Time Kanban Track  │ ◄─── │   Room SQLite Cache     │ ◄─────────────────┘
+│ (Applied ➔ Offer Stage) │      │ (Offline-First Storage) │
+└─────────────────────────┘      └─────────────────────────┘
 ```
 
 ---
 
-## 📑 Table of Contents
+## 🎯 Software Engineering Career Tracks
 
-- [Key Features](#-key-features)
-  - [1. Autonomous AI Auto-Apply Engine](#1-autonomous-ai-auto-apply-engine)
-  - [2. ATS Resume Scanner & Inspector](#2-ats-resume-scanner--inspector)
-  - [3. Centralized Application Tracker (Kanban & List)](#3-centralized-application-tracker)
-  - [4. Multi-Platform Credential Sync](#4-multi-platform-credential-sync)
-  - [5. AI Recruiter Cold Outreach](#5-ai-recruiter-cold-outreach)
-  - [6. Account Management & 1-Tap Google Sign-In](#6-account-management--1-tap-google-sign-in)
-- [Architecture & Tech Stack](#-architecture--tech-stack)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Environment Variables](#environment-variables)
-  - [Build and Run](#build-and-run)
-- [Permissions](#-permissions)
-- [Security & Privacy](#-security--privacy)
-- [Contributing](#-contributing)
-- [License](#-license)
+AutoApply provides **1-Click Engineering Role Presets**, instantly configuring resume heuristics, technical keywords, ATS matching vectors, and expected compensation:
+
+| Role Preset | Target Titles | Core Tech Stack & Heuristics | Default Target Range |
+| :--- | :--- | :--- | :--- |
+| 🚀 **Senior Software Engineer** | Senior SWE, Staff Engineer, SDE II / III, Lead Engineer | Distributed Systems, Microservices, Python, Go, Kotlin, TypeScript, AWS, Docker, Kubernetes, CI/CD, Gemini AI | $160,000 – $220,000 |
+| 💻 **Full-Stack Software Engineer** | Full Stack Engineer, Web Architect, Lead Frontend/Backend | React, Next.js, TypeScript, Node.js, Express, Kotlin, Spring Boot, PostgreSQL, MongoDB, GraphQL, WebSockets | $150,000 – $195,000 |
+| ⚙️ **Backend & Cloud Systems** | Backend Developer, Systems Architect, Platform Engineer | Go, Java, Kotlin, Spring Boot, gRPC, Kafka, Redis, PostgreSQL, MySQL, Terraform, Event-Driven Architecture | $165,000 – $210,000 |
+| 🧠 **AI / Machine Learning Engineer** | AI Engineer, ML Systems Engineer, Generative AI Architect | Python, PyTorch, TensorFlow, Google Gemini API, LangChain, LlamaIndex, Vector DBs, RAG, FastAPI, HuggingFace | $170,000 – $230,000 |
+| 📱 **Mobile & Android Architect** | Android Engineer, Senior Mobile Dev, Mobile Tech Lead | Kotlin, Jetpack Compose, Coroutines, Flow, Room DB, Retrofit, MVVM/MVI, M3, Performance Profiling | $150,000 – $190,000 |
+| 🎓 **Graduate Software Engineer** | Junior SWE, Associate Developer, Software Intern | Data Structures & Algorithms, OOP, Java, Kotlin, Python, JavaScript, SQL, REST APIs, Git, Unit Testing | $75,000 – $110,000 |
 
 ---
 
-## 🌟 Key Features
+## 🌟 Core Capabilities
 
-### 1. Autonomous AI Auto-Apply Engine
-- **Multi-Platform Batching**: Run concurrent or sequential application dispatches across all connected job boards.
-- **Natural Pacing Safeguards**: Incorporates intelligent throttle intervals (rate-limiting) to mimic human interactions and safeguard account health.
-- **Live Terminal Execution Log**: Streaming operational console with step-by-step visibility into keyword matching, question parsing, and submission states.
-- **Relevance Gating**: Set custom ATS score thresholds (e.g. `≥ 80% Match`) to ensure high-quality, targeted submissions.
+### 1. 🤖 Autonomous Auto-Apply Agent
+- **Concurrent & Batch Dispatch**: Queue hundreds of qualified roles across multiple portals simultaneously.
+- **Smart Human Pacing Engine**: Employs dynamic jitter delays and throttle intervals to safeguard accounts against anti-bot triggers.
+- **Live Terminal Execution Log**: Streaming operational console providing transparent step-by-step insight into form parsing, ATS alignment, and confirmation receipts.
+- **Strict Relevance Thresholds**: Configurable ATS match-score gating (e.g. `≥ 80% Match`) ensuring high-precision submissions.
 
-### 2. ATS Resume Scanner & Inspector
-- **OCR Text Extraction**: Parses skills, experience, contact metadata, and technical certifications directly from uploaded resumes.
-- **Interactive Resume Modal**: Live candidate preview with instant preset switching (*Senior Mobile Engineer* vs. *Fresher / New Grad*).
-- **ATS Match Matrix**: Granular diagnostic scores evaluating keyword saturation, layout readability, and contact clarity.
-- **1-Click Autofill Verification**: Audits all required form data (e.g., notice period, expected compensation, portfolio links) prior to queueing.
+### 2. 📄 ATS Resume Scanner & OCR Analyzer
+- **Automated Text Extraction**: Ingests resume PDFs and parses experience, technical certifications, and project links.
+- **Granular ATS Diagnostics**: Evaluates keyword density, formatting compliance, contact accessibility, and hard skill coverage.
+- **Autofill Form Validator**: Automatically verifies candidate metadata (notice period, visa status, salary expectations, GitHub, LinkedIn).
 
-### 3. Centralized Application Tracker
-- **Dynamic Kanban & Tabular Views**: Organize applications across 5 distinct stages:
-  - 📥 `Applied` → 🔍 `In Review` → 💬 `Interviewing` → 🏆 `Offered` → 📁 `Archived/Rejected`
-- **Multi-Vector Search & Filters**: Filter dynamically by platform, compensation brackets, date ranges, and work arrangement (*Remote*, *Hybrid*, *Onsite*).
-- **Deep Application Dossier**: View comprehensive job descriptions, submitted resume versions, recruiter contacts, and activity timelines.
+### 3. 📊 Centralized Application Kanban
+- **Real-Time Kanban & List Modes**: Track applications across the software engineering hiring funnel:
+  $$\text{Applied} \longrightarrow \text{In Review} \longrightarrow \text{Technical Interview} \longrightarrow \text{Offered} \longrightarrow \text{Archived}$$
+- **Multi-Vector Filtering**: Filter instantly by platform source, experience level, remote/hybrid status, and salary bracket.
+- **Deep Application Inspector**: Inspect individual job descriptions, submitted resume versions, recruiter contacts, and activity timelines.
 
-### 4. Multi-Platform Credential Sync
-- **Unified Platform Cockpit**: Centralized hub managing connections for:
-  - 🔗 **LinkedIn** • 💼 **Indeed** • 🏢 **Glassdoor** • 🚀 **Wellfound (AngelList)** • 👾 **Monster** • 🎯 **ZipRecruiter**
-- **Live Diagnostic Indicators**: Real-time heartbeat checks, active sync status, and synchronized job role counters.
+### 4. 🌐 Multi-Platform Credential Sync
+- **Unified Portal Cockpit**: Centralized session manager supporting:
+  - 🔗 **LinkedIn** (Easy Apply integration)
+  - 💼 **Indeed** (Instant Apply sync)
+  - 🏢 **Glassdoor** (Aggregated job matches)
+  - 🚀 **Wellfound / AngelList** (Direct startup founder intros)
+  - 👾 **Monster** & 🎯 **ZipRecruiter** (1-Click submissions)
+  - 📋 **Greenhouse & Lever** (Direct enterprise ATS pipelines)
 
-### 5. AI Recruiter Cold Outreach
-- **Context-Aware Email Drafter**: Leverages Google Gemini to synthesize bespoke cold outreach emails tailored to hiring managers and job descriptions.
-- **Native Android Email Dispatch**: One-tap export to your device's native email client (Gmail, Outlook) with pre-filled subject lines, recruiter addresses, and customized cover letters.
+### 5. 📧 AI Recruiter Cold Outreach
+- **Tailored Cover Letters & Cold Emails**: Employs Google Gemini 2.5 to synthesize context-aware outreach messages aligned with hiring managers' specific requirements.
+- **1-Tap Direct Mail Intent**: Seamlessly opens drafts in native email clients (Gmail, Outlook) with pre-populated recipient addresses, custom subjects, and tailored pitches.
 
-### 6. Account Management & 1-Tap Google Sign-In
-- **Fast Google Authentication**: Seamless 1-tap Google Sign-In modal supporting multiple accounts and instant session provisioning.
-- **Multi-Profile Switching**: Switch effortlessly between distinct career personas without losing submitted histories.
-- **Offline-First Persistence**: Powered by SQLite Room Database with reactive Kotlin StateFlow pipelines.
+### 6. 🔐 1-Tap Google Sign-In & Offline Persistence
+- **Rapid Google Authentication**: Instant 1-tap Google Sign-In with multi-account switching capabilities.
+- **Zero Cloud Leakage**: Sensitive user credentials and application records remain cached safely in local Room SQLite storage.
 
 ---
 
-## 🏗️ Architecture & Tech Stack
+## 🏗️ System Architecture
 
-AutoApply follows **Clean Architecture** principles combined with the official **Android MVVM (Model-View-ViewModel)** pattern.
+AutoApply adheres strictly to **Clean Architecture** and the **Android Jetpack MVVM (Model-View-ViewModel)** reactive pattern:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                     Jetpack Compose UI                      │
-│   (Screens, Components, Material Design 3, Color Tokens)     │
+│   (Dashboard, Auto-Apply Hub, Kanban Tracker, Profile)      │
 └──────────────────────────────┬──────────────────────────────┘
                                │ Observes UI State (StateFlow)
                                ▼
@@ -113,11 +116,11 @@ AutoApply follows **Clean Architecture** principles combined with the official *
 │                    JobViewModel (MVVM)                      │
 │   (Business Logic, Bot State Machine, Filtering, Coroutines)│
 └──────────────────────────────┬──────────────────────────────┘
-                               │ Calls
+                               │ Dispatches Commands
                                ▼
 ┌─────────────────────────────────────────────────────────────┐
 │                   JobRepository (Repository)                │
-│    (Single Source of Truth, Data Routing, Type Converters)  │
+│    (Single Source of Truth, Query Logic, Type Converters)   │
 └───────────────────┬─────────────────────────────────┬───────┘
                     │                                 │
                     ▼                                 ▼
@@ -127,17 +130,13 @@ AutoApply follows **Clean Architecture** principles combined with the official *
 └──────────────────────────────────────┘ └────────────────────┘
 ```
 
-### Core Technologies
-| Category | Technology |
-| :--- | :--- |
-| **Language** | [Kotlin 2.0+](https://kotlinlang.org/) |
-| **UI Framework** | [Jetpack Compose](https://developer.android.com/jetpack/compose) with Material Design 3 (M3) |
-| **Asynchronous Engine** | Kotlin Coroutines & Flow (`StateFlow`, `SharedFlow`) |
-| **Local Database** | [Room Database](https://developer.android.com/training/data-storage/room) (SQLite) + Type Converters |
-| **AI Integration** | [Google Gemini 2.5 Flash](https://ai.google.dev/) via direct Ktor REST Client |
-| **Networking & Serialization** | Ktor Client, OkHttp, Kotlinx Serialization |
-| **Image Loading** | [Coil 3](https://coil-kt.github.io/coil/) (Compose) |
-| **Dependency Injection** | Constructor Injection & ViewModel Provider Factory |
+### Technology Breakdown
+- **Core Language**: Kotlin 2.0 (Coroutines, StateFlow, Serialization)
+- **UI Framework**: Jetpack Compose with Material Design 3 (Dynamic Color)
+- **AI Core**: Google Gemini 2.5 Flash via high-efficiency Ktor REST Client
+- **Local Persistence**: Room SQLite with custom Type Converters
+- **Image Pipeline**: Coil 3 for Compose
+- **Architecture**: MVVM + Clean Architecture + Repository Pattern
 
 ---
 
@@ -149,11 +148,11 @@ AutoApply/
 │   ├── src/main/
 │   │   ├── java/com/example/
 │   │   │   ├── data/
-│   │   │   │   ├── gemini/           # Gemini API client & AI prompt builders
-│   │   │   │   ├── local/            # Room DB, Entity models, and DAOs
-│   │   │   │   └── repository/       # Unified Single-Source-of-Truth Repository
+│   │   │   │   ├── gemini/           # Gemini API client & AI prompt orchestrators
+│   │   │   │   ├── local/            # Room Database, Entities (Jobs, Logs, Profiles) & DAOs
+│   │   │   │   └── repository/       # Single-Source-of-Truth Repository
 │   │   │   ├── ui/
-│   │   │   │   ├── screens/          # Compose Screen composables & dialogs
+│   │   │   │   ├── screens/          # Modular Jetpack Compose Screens
 │   │   │   │   │   ├── DashboardScreen.kt
 │   │   │   │   │   ├── AutoApplyScreen.kt
 │   │   │   │   │   ├── ApplicationsTrackerScreen.kt
@@ -162,15 +161,15 @@ AutoApply/
 │   │   │   │   │   ├── LoginScreen.kt
 │   │   │   │   │   ├── ResumePreviewDialog.kt
 │   │   │   │   │   └── AuthDialog.kt
-│   │   │   │   ├── theme/            # M3 ColorScheme, Typography, Shapes & Tokens
-│   │   │   │   └── viewmodel/        # JobViewModel and state orchestrators
+│   │   │   │   ├── theme/            # M3 Color, Typography, Elevation, Shapes
+│   │   │   │   └── viewmodel/        # JobViewModel (Reactive StateFlow Engine)
 │   │   │   └── MainActivity.kt       # Single-Activity Navigation Host
-│   │   └── res/                      # Vector drawables, mipmaps, strings, colors
-│   └── build.gradle.kts              # App-level Gradle build script
+│   │   └── res/                      # Vector Drawables, Strings, Icons
+│   └── build.gradle.kts              # App-level Gradle build configuration
 ├── gradle/
 │   └── libs.versions.toml            # Centralized Version Catalog
-├── .env.example                      # Environment variables template
-└── README.md
+├── .env.example                      # API Credentials Template
+└── README.md                         # Comprehensive Documentation
 ```
 
 ---
@@ -180,105 +179,64 @@ AutoApply/
 ### Prerequisites
 - **Android Studio**: Ladybug (2024.2+) or higher
 - **JDK**: Java 17 or higher
-- **Android Device / Emulator**: Running Android 8.0 (API Level 26) or above
-- **Gemini API Key**: Obtain a free key from [Google AI Studio](https://aistudio.google.com/) *(optional for AI features)*
+- **Android Target**: Android 8.0 (API Level 26) or newer
+- **Gemini API Key**: Free key from [Google AI Studio](https://aistudio.google.com/) *(optional for AI synthesis)*
 
 ---
 
-### Installation Steps
+### Step-by-Step Setup
 
-1. **Clone the repository**:
+1. **Clone the Repository**:
    ```bash
    git clone https://github.com/your-username/auto-apply-android.git
    cd auto-apply-android
    ```
 
 2. **Configure API Secrets**:
-   Copy the example environment file:
+   Copy `.env.example` to `.env`:
    ```bash
    cp .env.example .env
    ```
-   Add your Google Gemini API Key inside `.env`:
+   Add your Google Gemini API Key:
    ```env
-   GEMINI_API_KEY="your_actual_gemini_api_key_here"
+   GEMINI_API_KEY="your_gemini_api_key_here"
    ```
 
-3. **Open and Sync in Android Studio**:
-   - Open Android Studio, click **File** ➔ **Open...**, and select the project root directory.
-   - Allow Gradle to download dependencies and sync the Version Catalog (`libs.versions.toml`).
+3. **Open in Android Studio**:
+   - Launch Android Studio ➔ **Open...** ➔ Select the project folder.
+   - Let Gradle resolve dependencies and sync the catalog.
 
-4. **Build and Run**:
-   - Select your target device or emulator in Android Studio.
-   - Click the green **Run (▶)** button or execute via CLI:
+4. **Build & Execute**:
+   - Press **Run ▶** or execute via terminal:
      ```bash
      gradle :app:installDebug
      ```
 
 ---
 
-### 📦 Release APK Generation
+### 📦 Building Release APK
 
-To generate an optimized release APK:
+To generate a standalone release APK:
 
 ```bash
 gradle :app:assembleRelease
 ```
-The generated APK artifact will be output to:
+The resulting package will be stored at:
 ```
 app/build/outputs/apk/release/app-release-unsigned.apk
 ```
 
 ---
 
-## 🔒 Permissions & Security
+## 🔒 Security & Privacy
 
-| Permission | Purpose |
-| :--- | :--- |
-| `android.permission.INTERNET` | Required for Gemini AI prompt processing, live platform sync, and job fetching. |
-| `android.permission.POST_NOTIFICATIONS` | Required on Android 13+ (API 33+) to dispatch background application status notifications. |
-
-### Security Architecture
-- **On-Device Storage**: Credentials and application histories are persisted securely in local Room SQLite storage.
-- **Zero Third-Party Telemetry**: Your resumes and contact details are processed strictly between your device and direct API endpoints.
-- **Secret Isolation**: Secrets and API keys are injected at build-time via Gradle `BuildConfig` and excluded from source control.
+- **On-Device Encrypted Storage**: All credentials and application logs remain strictly within local SQLite storage on your device.
+- **Zero Third-Party Telemetry**: Your resume data is never shared with third-party tracking or advertising networks.
+- **Secure Secret Ingestion**: Secrets are passed at build time via `BuildConfig` and omitted from version control.
 
 ---
 
-## 🗺️ Roadmap
-
-- [x] Autonomous Auto-Apply State Machine with human-like rate pacing.
-- [x] Multi-Platform Hub (LinkedIn, Indeed, Wellfound, Glassdoor, Monster, ZipRecruiter).
-- [x] Gemini 2.5 Flash AI cover letter & cold outreach generator.
-- [x] Interactive ATS Resume Viewer with granular keyword score diagnostics.
-- [x] 1-Tap Google Sign-In & Multi-Profile Switcher.
-- [ ] Direct LinkedIn & Indeed OAuth2 Cloud Synchronization.
-- [ ] Export Applications Tracker to CSV / Google Sheets.
-- [ ] Push Notification Webhook for incoming recruiter responses.
-
----
-
-## 🤝 Contributing
-
-Contributions are warmly welcomed! If you'd like to improve AutoApply:
-
-1. **Fork the Repository**
-2. **Create a Feature Branch**:
-   ```bash
-   git checkout -b feature/AmazingFeature
-   ```
-3. **Commit your changes**:
-   ```bash
-   git commit -m "Add AmazingFeature"
-   ```
-4. **Push to the branch**:
-   ```bash
-   git push origin feature/AmazingFeature
-   ```
-5. **Open a Pull Request**
-
----
-
-## 👨‍💻 Author & Lead Developer
+## 👨‍💻 Author & Lead Architect
 
 <div align="center">
 
@@ -286,10 +244,10 @@ Contributions are warmly welcomed! If you'd like to improve AutoApply:
 
 *Lead Mobile Systems Architect & AI Engineer*
 
-[![Email](https://img.shields.io/badge/Email-asishranjansahu2003%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:asishranjansahu2003@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=flat&logo=github&logoColor=white)](https://github.com/)
+[![Email](https://img.shields.io/badge/Email-asishranjansahu2003%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:asishranjansahu2003@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/asishranjansahu2003)
 
-Designed and built with modern Android engineering standards, reactive unidirectional architecture, and intelligent automated agents.
+Architected and developed with modern Android standards, reactive state streams, and autonomous AI automation.
 
 </div>
 
@@ -297,14 +255,14 @@ Designed and built with modern Android engineering standards, reactive unidirect
 
 ## 📄 License
 
-Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
+Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for complete details.
 
 <div align="center">
 
 <br/>
 
-**Designed & Developed with ❤️ by ASISH RANJAN SAHU**  
-*Built using Kotlin, Jetpack Compose
+**Designed & Engineered with ❤️ by ASISH RANJAN SAHU**  
+*Powered by Kotlin 2.0 • Jetpack Compose • Google Gemini 2.5*
 
 [⭐ Star on GitHub](https://github.com/your-username/auto-apply-android) • [🐛 Report Bug](https://github.com/your-username/auto-apply-android/issues) • [💡 Request Feature](https://github.com/your-username/auto-apply-android/issues)
 
