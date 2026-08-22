@@ -1,0 +1,6 @@
+{
+  "name": "AutoApply",
+  "description": "Centralized automated job application manager that connects to major job platforms and tracks statuses in real-time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
